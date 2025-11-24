@@ -1,0 +1,119 @@
+/* ==========================================
+   RESET & BASE
+========================================== */
+*{
+    margin:0;padding:0;box-sizing:border-box;
+}
+body{
+    background:#0b0b0b;
+    color:#e7e7e7;
+    font-family:"Poppins",sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px;
+}
+
+/* ==========================================
+   TÍTULO
+========================================== */
+h1{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:30px;
+    color:#f2f2f2;
+}
+
+/* ==========================================
+   FORMULÁRIO
+========================================== */
+form{
+    width:100%;
+    max-width:640px;
+    background:#151515;
+    border:1px solid #1a1a1a;
+    border-radius:16px;
+    padding:35px 40px 40px;
+    display:grid;
+    gap:18px;
+    box-shadow:0 0 25px rgba(0,0,0,.55);
+}
+
+/* labels */
+label{
+    font-size:14px;
+    font-weight:500;
+    color:#bbbbbb;
+}
+
+/* inputs, select, textarea */
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=file],
+select,
+textarea{
+    background:#1a1a1a;
+    border:1px solid #2a2a2a;
+    color:#e7e7e7;
+    padding:12px 14px;
+    border-radius:10px;
+    font-size:15px;
+    transition:all .25s ease;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#00c853;
+    box-shadow:0 0 10px #00c85344;
+}
+textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+/* preview de imagem */
+img[src*="uploads"]{
+    margin-top:8px;
+    border-radius:8px;
+    max-width:180px;
+    height:auto;
+    border:1px solid #2a2a2a;
+}
+
+/* ==========================================
+   BOTÃO SALVAR
+========================================== */
+button[type=submit]{
+    justify-self:center;
+    margin-top:10px;
+    background:#00c853;
+    color:#000;
+    font-weight:600;
+    font-size:16px;
+    padding:12px 36px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:all .25s ease;
+}
+button[type=submit]:hover{
+    background:#009624;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   LINK VOLTAR
+========================================== */
+a[href="admin.php"]{
+    margin-top:30px;
+    color:#bbbbbb;
+    font-size:14px;
+    text-decoration:none;
+    transition:color .25s ease;
+}
+a[href="admin.php"]:hover{
+    color:#ffab00;
+}

@@ -1,0 +1,162 @@
+/* ================================
+   RESET & BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    color: #e7e7e7;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================================
+   HEADER
+================================ */
+.container-admin {
+    width: 100%;
+    background: #111;
+    padding: 18px 30px;
+    border-bottom: 1px solid #1e1e1e;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.topo-direita span {
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
+/* ================================
+   MENU SUPERIOR
+================================ */
+.menu-adm {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-adm p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffab00;
+    margin-right: 20px;
+}
+
+.menu-adm a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    background: #181818;
+    color: #e7e7e7;
+    transition: all .25s ease;
+    border: 1px solid transparent;
+}
+
+.menu-adm a:hover {
+    background: #232323;
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   TÍTULO
+================================ */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 40px 0 20px;
+    color: #f2f2f2;
+}
+
+/* ================================
+   BOTÃO NOVO USUÁRIO
+================================ */
+a[href="form.php"] {
+    display: inline-block;
+    margin: 0 auto 30px;
+    background: #ffab00;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+a[href="form.php"]:hover {
+    background: #ff8f00;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   TABELA
+================================ */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    background: #151515;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1a1a1a;
+}
+
+thead {
+    background: #ffab00;
+    color: #000;
+    font-weight: 600;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+tbody tr:hover {
+    background: #1c1c1c;
+}
+
+tbody a {
+    color: #00c853;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+tbody a:hover {
+    text-decoration: underline;
+}
+
+tbody button {
+    background: #d50000;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+tbody button:hover {
+    background: #9b0000;
+    transform: translateY(-2px);
+}

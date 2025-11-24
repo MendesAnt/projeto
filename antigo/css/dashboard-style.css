@@ -1,0 +1,146 @@
+/* ================================
+   RESET & BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    color: #e7e7e7;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================================
+   HEADER
+================================ */
+.container-admin {
+    width: 100%;
+    background: #111;
+    padding: 18px 30px;
+    border-bottom: 1px solid #1e1e1e;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.topo-direita span {
+    font-size: 15px;
+    color: #bbbbbb;
+}
+
+/* ================================
+   MENU LATERAL SUPERIOR
+================================ */
+.menu-adm {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-adm p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #00c853;
+    margin-right: 20px;
+}
+
+.menu-adm a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    background: #181818;
+    color: #e7e7e7;
+    transition: all .25s ease;
+    border: 1px solid transparent;
+}
+
+.menu-adm a:hover {
+    background: #232323;
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   MAIN / DASHBOARD
+================================ */
+.dashboard {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-dashboard {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #f2f2f2;
+}
+
+/* ================================
+   CARDS
+================================ */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+.card {
+    display: block;
+    text-decoration: none;
+    color: #e7e7e7;
+
+    background: linear-gradient(180deg, #151515, #101010);
+    padding: 25px;
+    border-radius: 14px;
+
+    border: 1px solid #1a1a1a;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+
+    transition: all .25s ease;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card p {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #c9c9c9;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #2d2d2d;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* Cores individualizadas opcionais */
+.card-categorias:hover {
+    box-shadow: 0 0 12px #00c85355;
+}
+
+.card-noticias:hover {
+    box-shadow: 0 0 12px #2962ff55;
+}
+
+.card-usuarios:hover {
+    box-shadow: 0 0 12px #ffab0055;
+}

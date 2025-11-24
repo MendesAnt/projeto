@@ -1,0 +1,109 @@
+/* ================================
+   RESET & BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    color: #e7e7e7;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ================================
+   TÍTULO
+================================ */
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #f2f2f2;
+}
+
+/* ================================
+   FORMULÁRIO
+================================ */
+form {
+    width: 100%;
+    max-width: 500px;
+    background: #151515;
+    border: 1px solid #1a1a1a;
+    border-radius: 14px;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #bbbbbb;
+}
+
+input[type="text"] {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #e7e7e7;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.25s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #00c853;
+    box-shadow: 0 0 10px rgba(0, 200, 83, 0.3);
+}
+
+/* ================================
+   GRUPO DE BOTÕES
+================================ */
+.grupo-botoes {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.botao-cadastrar,
+.botao-voltar {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.botao-cadastrar {
+    background: #00c853;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-cadastrar:hover {
+    background: #009624;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.botao-voltar {
+    background: #2a2a2a;
+    color: #e7e7e7;
+}
+
+.botao-voltar:hover {
+    background: #444;
+    transform: translateY(-2px);
+}
